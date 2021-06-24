@@ -1,5 +1,6 @@
 # deepimblearn
 
+[![Build Status](https://travis-ci.com/wccheng3011/deep-imbalanced-learn.svg?branch=main)](https://travis-ci.com/wccheng3011/deep-imbalanced-learn)
 
 ## Environments
 * This package is tested on Linux OS.
@@ -34,7 +35,7 @@ python setup.py install
 cd example
 python main.py --gpu 0 --seed 1126 --c config/config_cifar10.yaml --strategy ERM
 ```
-* For more information about example and usage, please see the [Example README](https://github.com/wccheng3011/deep-imblanced-learn/tree/main/example)
+* For more information about example and usage, please see the [Example README](https://github.com/wccheng3011/deep-imbalanced-learn/tree/main/example)
 
 ## Test
 * `python -m unittest -v`

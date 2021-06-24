@@ -10,7 +10,7 @@ from deepimblearn.dataset.imbalance_svhn import IMBALANCESVHN
 
 class TestCIFAR10(unittest.TestCase):
     def test_svhn10_exp100(self):
-        train_dataset = IMBALANCESVHN(root='~/LDAM/libdeep/example/data',
+        train_dataset = IMBALANCESVHN(root='./data',
                                       imb_type="exp",
                                       imb_factor=0.01,
                                       rand_number=0,
@@ -23,7 +23,7 @@ class TestCIFAR10(unittest.TestCase):
         assert_array_equal(gen_cls_num, true_cls_num)
 
     def test_svhn10_step100(self):
-        train_dataset = IMBALANCESVHN(root='~/LDAM/libdeep/example/data',
+        train_dataset = IMBALANCESVHN(root='./data',
                                       imb_type="step",
                                       imb_factor=0.01,
                                       rand_number=0,

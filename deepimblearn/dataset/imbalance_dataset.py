@@ -142,6 +142,7 @@ class ImbalancedDataset:
     def _cinic10(self):
         print("=> Preparing IMBALANCECINIC100 {} | {} !".format(
             self.imb_type, self.imb_factor))
+        # Change to your path
         cinic_root = "/tmp2/wccheng/cinic/"
         train_dataset = IMBALANCECINIC10(
             cinic_root + "train",
@@ -159,8 +160,8 @@ class ImbalancedDataset:
     def _tiny200(self):
         print("=> Preparing IMBALANCETINY {} | {} !".format(
             self.imb_type, self.imb_factor))
-        tiny_root = "/home/wccheng/LDAM/Master_Server_Backup/Imbalance/TINY/local_tiny/tiny-imagenet-200/"
-        # tiny_root = "/tmp2/wccheng/tiny/tiny-imagenet-200/"
+        # Change to your path
+        tiny_root = "/tmp2/wccheng/tiny/tiny-imagenet-200/"
         train_dataset = IMBALANCETINY(tiny_root + "train",
                                       imb_type=self.imb_type,
                                       imb_factor=self.imb_factor,

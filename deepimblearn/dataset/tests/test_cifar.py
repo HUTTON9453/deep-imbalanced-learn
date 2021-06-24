@@ -11,7 +11,7 @@ from deepimblearn.dataset.imbalance_cifar import IMBALANCECIFAR100
 
 class TestCIFAR10(unittest.TestCase):
     def test_cifar10_exp100(self):
-        train_dataset = IMBALANCECIFAR10(root='~/LDAM/libdeep/example/data',
+        train_dataset = IMBALANCECIFAR10(root='./data',
                                          imb_type="exp",
                                          imb_factor=0.01,
                                          rand_number=0,
@@ -25,7 +25,7 @@ class TestCIFAR10(unittest.TestCase):
         assert_array_equal(gen_cls_num, true_cls_num)
 
     def test_cifar10_step100(self):
-        train_dataset = IMBALANCECIFAR10(root='~/LDAM/libdeep/example/data',
+        train_dataset = IMBALANCECIFAR10(root='./data',
                                          imb_type="step",
                                          imb_factor=0.01,
                                          rand_number=0,
@@ -39,7 +39,7 @@ class TestCIFAR10(unittest.TestCase):
         assert_array_equal(gen_cls_num, true_cls_num)
 
     def test_cifar100_exp100(self):
-        train_dataset = IMBALANCECIFAR100(root='~/LDAM/libdeep/example/data',
+        train_dataset = IMBALANCECIFAR100(root='./data',
                                           imb_type="exp",
                                           imb_factor=0.01,
                                           rand_number=0,
@@ -60,7 +60,7 @@ class TestCIFAR10(unittest.TestCase):
         assert_array_equal(gen_cls_num, true_cls_num)
 
     def test_cifar100_step100(self):
-        train_dataset = IMBALANCECIFAR100(root='~/LDAM/libdeep/example/data',
+        train_dataset = IMBALANCECIFAR100(root='./data',
                                          imb_type="step",
                                          imb_factor=0.01,
                                          rand_number=0,
