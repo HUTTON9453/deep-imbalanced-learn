@@ -39,3 +39,6 @@ python main.py --gpu 0 --seed 1126 --c config/config_cifar10.yaml --strategy ERM
 
 ## Test
 * `python -m unittest -v`
+
+## Contact
+* If you have any question, please don't hesitate to email `wccheng3011@gmail.com`. Thanks ! 
