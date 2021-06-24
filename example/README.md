@@ -49,7 +49,7 @@ python main.py --gpu 0 --seed 1126 --c config/config_cifar10.yaml --best_model .
 ### Dataset supported
 * We provide some common image datasets for research benchmark.
 * To specify, use the corresponding config file, for example:
-    * `python main.py --gpu 0 --seed 1126 --config/config_tiny200.yaml` for using `Tiny-ImageNet`.
+    * `python main.py --gpu 0 --seed 1126 --c config/config_tiny200.yaml` for using `Tiny-ImageNet`.
 * We follow [This repo](https://github.com/YyzHarry/imbalanced-semi-self) to prepare imbalanced SVHN.
 * We follow [LDAM-DRW](https://github.com/kaidic/LDAM-DRW) to prepare imbalanced CIFAR.
 
@@ -76,11 +76,11 @@ python main.py --gpu 0 --seed 1126 --c config/config_cifar10.yaml --best_model .
 ### CIFAR-10
 * Train from scratch
 ```
-python main.py --gpu 0 --seed 1126 --config/config_cifar10.yaml --strategy [Strategy_Name]
+python main.py --gpu 0 --seed 1126 --c config/config_cifar10.yaml --strategy [Strategy_Name]
 ```
 * Eval with best model
 ```
-python main.py --gpu 0 --seed 1126 --config/config_cifar10.yaml --strategy [Strategy_Name] --best_model [Path to Best Model]
+python main.py --gpu 0 --seed 1126 --c config/config_cifar10.yaml --strategy [Strategy_Name] --best_model [Path to Best Model]
 ```
 * Following [LDAM Work](https://arxiv.org/pdf/1906.07413.pdf), we use **ResNet32** as the backone.
 
@@ -96,11 +96,11 @@ python main.py --gpu 0 --seed 1126 --config/config_cifar10.yaml --strategy [Stra
 ### CIFAR-100
 * Train from scratch
 ```
-python main.py --gpu 0 --seed 1126 --config/config_cifar100.yaml --strategy [Strategy_Name]
+python main.py --gpu 0 --seed 1126 --c config/config_cifar100.yaml --strategy [Strategy_Name]
 ```
 * Eval with best model
 ```
-python main.py --gpu 0 --seed 1126 --config/config_cifar100.yaml --strategy [Strategy_Name] --best_model [Path to Best Model]
+python main.py --gpu 0 --seed 1126 --c config/config_cifar100.yaml --strategy [Strategy_Name] --best_model [Path to Best Model]
 ```
 * Following [LDAM Work](https://arxiv.org/pdf/1906.07413.pdf), we use **ResNet32** as the backone.
 
@@ -116,11 +116,11 @@ python main.py --gpu 0 --seed 1126 --config/config_cifar100.yaml --strategy [Str
 ### CINIC-10
 * Train from scratch
 ```
-python main.py --gpu 0 --seed 1126 --config/config_cinic10.yaml --strategy [Strategy_Name]
+python main.py --gpu 0 --seed 1126 --c config/config_cinic10.yaml --strategy [Strategy_Name]
 ```
 * Eval with best model
 ```
-python main.py --gpu 0 --seed 1126 --config/config_cinic10.yaml --strategy [Strategy_Name] --best_model [Path to Best Model]
+python main.py --gpu 0 --seed 1126 --c config/config_cinic10.yaml --strategy [Strategy_Name] --best_model [Path to Best Model]
 ```
 * Following [Remix Work](https://arxiv.org/pdf/2007.03943.pdf), we use **ResNet18** as the backone.
 
@@ -136,11 +136,11 @@ python main.py --gpu 0 --seed 1126 --config/config_cinic10.yaml --strategy [Stra
 ### SVHN
 * Train from scratch
 ```
-python main.py --gpu 0 --seed 1126 --config/config_svhn10.yaml --strategy [Strategy_Name]
+python main.py --gpu 0 --seed 1126 --c config/config_svhn10.yaml --strategy [Strategy_Name]
 ```
 * Eval with best model
 ```
-python main.py --gpu 0 --seed 1126 --config/config_svhn10.yaml --strategy [Strategy_Name] --best_model [Path to Best Model]
+python main.py --gpu 0 --seed 1126 --c config/config_svhn10.yaml --strategy [Strategy_Name] --best_model [Path to Best Model]
 ```
 * Following [imbalanced-semi-self Work](https://github.com/YyzHarry/imbalanced-semi-self), we use **ResNet32** as the backone.
 
@@ -156,11 +156,11 @@ python main.py --gpu 0 --seed 1126 --config/config_svhn10.yaml --strategy [Strat
 ### Tiny-ImageNet
 * Train from scratch
 ```
-python main.py --gpu 0 --seed 1126 --config/config_tiny200.yaml --strategy [Strategy_Name]
+python main.py --gpu 0 --seed 1126 --c config/config_tiny200.yaml --strategy [Strategy_Name]
 ```
 * Eval with best model
 ```
-python main.py --gpu 0 --seed 1126 --config/config_tiny200.yaml --strategy [Strategy_Name] --best_model [Path to Best Model]
+python main.py --gpu 0 --seed 1126 --c config/config_tiny200.yaml --strategy [Strategy_Name] --best_model [Path to Best Model]
 ```
 * Following [LDAM Work](https://arxiv.org/pdf/1906.07413.pdf), we use **ResNet18** as the backone.
 
